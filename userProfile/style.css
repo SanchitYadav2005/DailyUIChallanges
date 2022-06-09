@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0em;
+    text-align: center;
+}
+
+.header-background{
+    height: 220px;
+    width: auto;
+    background-color: #219ebc;
+}
+#main-img{
+    margin-top: 6em;
+    width: 200px;
+    height: 200px;
+    border-radius: 10em;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border:5px solid white;
+}
+.content{
+    margin-top: 6em;
+}
+
+h1{
+    font-size: 4em;
+}
+.content span{
+    font-size: 1em;
+    color: #00f5d4;
+}
+p{
+    margin: 3em 25em 2em 25em;
+    width: 500px;
+}
+.group-of-imgs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 1em;
+}
+.group-of-imgs img{
+    width: 30%;
+    height: 30%;
+    border-radius: 2em;
+    padding:1em;
+}
+footer{
+    width: auto;
+    height: 100px;
+    background-color: #219ebc;
+}
+button{
+    padding: 0em 3em 0.2em 3em;
+    font-size: 1.5em;
+    background-color: white;
+    color: #2ec4b6;
+    border: 2px solid #2ec4b6;
+    border-radius: 2em;
+    margin-bottom: 3em;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: #2ec4b6;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
