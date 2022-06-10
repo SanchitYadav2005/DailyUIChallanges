@@ -3,4 +3,26 @@
     font-family: 'Open Sans', sans-serif;
     margin: 0em;
     padding: 0em;
+    background-color: #023047;
+}
+.functions{
+    border: 3px solid #a2d2ff;
+    color: #a2d2ff;
+    margin: 3em;
+}
+h1{
+    text-align: center;
+    font-size: 5em;
+    color: #a2d2ff;
+}
+label{
+    margin-right: 85%;
+    font-size: 3em;
+}
+
+.content{
+    margin: 5% 10% ;
+}
+input[type="checkbox"]{
+    padding: 3em;
 }

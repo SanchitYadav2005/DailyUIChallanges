@@ -1,15 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Settings</title>
-    <link rel="icon" href="data:image/png;base64,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">
+    <link rel="icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANgAAADpCAMAAABx2AnXAAAAwFBMVEX///8AAAAREiTa2tvR0dH39/daWlrExMSenp6MjIxfX1/8/PwODyLLy8u4uLjg4ODm5ua+vr6Tk5NNTU3s7Ox7e3sjIyOEhIQAABWysrI6OjpkZGQAABtGRkbx8fEsLCympqZsbGwxMTEcHBx0dHQAABMNDQ04ODiUlJoVFRVTU1NBQUxqanKIiJCIiIiSkpIpKTYfHy1+f4cAAB84N0NVVV9xcXo0M0BiY2upqa+bnaRNUFk/QU8AAAxUVV8fIS+0tO8lAAAMA0lEQVR4nO1di1bqOhC1FA5iy0tRQCoUFU89UC1crIiv//+rW8RMkzSlSUlbcWXf5bnYliS7SWYmM5N4dKSgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKAQC6NeTUTdKLqV4ihrXCgX3U5RNPl4aVqz6JYK4pyX2HnRLRXEH15if4puqSAUMUXshwARO47FgROLf+LAiVXiHqgoYj8Lipgi9kPwa4md8BI7ybNVe8N40HiJaQ8HtNjs32n8xLS7fp5t2wPlK8wUjO0OA3vo6hDW0Z0x1mLtIv7BC/y5cSe/Fu6Cfv7nXGfdME41Au34Mtrkk6fMvtXP/7ErygaNr6acD6M3RmRrG8mlAEbRh4fnSW9HLjqoLTZ5vXlGNvU8VnJsUaEcI2eUY8dGN/Iap+EsGlXDqx2qmScc/qfmCfmdc4xCNez9W/kcWNCZzbfJJl5Xd5YBaF+T37O/r5OU85lmV2RTupsBV6Xbx611DdYbMbrkxavs2IToazT6TcrDkTS5SAypMfynyagiKzYhKheRWin8Ex44+r+kMi+EXlUqnCY04S6VcG7fJRR7KpsHDRD112dyG8B+YWd/0aesRT4Iq+pR/ybSjttW+pJbt5HibvpHVfR5II8DC3VUz2Z9WHkg23G5py1bviTLe9hMLJBLmRrKBlS9VV8tTNvcSJBc+CA42fY+xKMu9y8+HqBzuuhKHVGtSZFblRqiUUeXQKXZMiqIqRZeZ8hiq2AHe0wuEq3BF4lQwRuMSmUDNCkx6oxGX2pYstlvEHYLqOtu3Df2rjGX4R4F2HBZhXVBUtSTn5UJEMUZebRgySuuUgy9YZ/Wbm9rp3ZDF/dKDVDNnEsGMRiwPhIzAjrtLqWfLrttwSLQN6+zcNWhSJ1WE/iS0aCWkjCqGiJtREpAs8XazIMhKvueX+p2ajts27saf7dVQHFH/Sz7Aiw5bgOjU2MzClHjbiY4fqSnhUAGEfdi1k5aiWx6zeYtDdYSsr0EUDCnLdq6YlOhccVpssCL/ZeeAwswFMZ8z0cX97HgHNowFXb6KoUBzeCb8F269YMHu64HqNsPA/oen6UEwutuHx40YHl7zPU4KeJvTnVCkFb003viAT6DAtSNRC9BC5XJpSArxPQaMydleYw/c8WjQQzw8ElbSRxBK3gcNQbuDBnE2q1NfEie8bwwMOk453kyQCKd8TyNNfh+p7VcxwYkl/kJTjpZXgIYAzzLBkxuJLrcMfcNjwSBZdM1x8Mi5Wlnya8Kiw1xyPG+yNPlcIzLWZjVw9oTI4+d8FGuRRtWdlLJY02w7ERUNBynOyVY+FI550GY7L1zAldIf6ok7wepbi92qP5waHEvCcEjumswNsiAgcjCaScoMz026lABu9fmLxxcendx/UDHLKTxCjQ0FSeKkXfwAoQ0zTihwZTr+488/bxBlVzeM5dFYM6JBX3CwBTza2T07FK624OKPLJeG0xwwcphmrGswBZRLX+kVABE5JEh9MDbI+wlQ0bziNFsfI8MIwFDDrBZzCAGL148ormjq0Ni4pFSAbRH8cTQJE+xxkUvjCGUELFRxmkstVhioMdTTG/o7Kj4QMQkyngm4okh6+gmTbHIvRa1lYon9vh9J1VMBBk3j5E7xRND6+ZUBirq7qhzr3hi3zfuUoX3O8gYi9wpnBhSpFyr7CjQsiCi+AsnhgZTSofEOG4gF04MLZ1TOseQORZZExVOzI5rGR/Qe7HpG4UTQ/7MlNY3UtERj2zhxFCWTkp3BJqiD/SNwonV5BCLtL9wYr92KCI/TsqMqtivF06svV8DULmRxUnhxFADUuYVDpLKLYwY8uSkTLhGJnRk8V84MQh6pvKOgcsmcqd4Ysj1mMr0QIZHdGNj8cSQvE+1XwP5S6Kh4OKJgaspRcQA/CVRR1RexLqxxAzk0E2hyZAWu4g6FhGxzLIwvxBujGK43xDnkXi5o/jWg19RbF+JGDAvN4MYjEVhDyCEzRkuUcwTbIu3mAtEXIIV10O66FLQwQ5J7ywdiLu45UckjuhI0h3Liw5hP740FwCkprBm5xCvVnYMKSie2hTBFhCQ3yBUPSjne+Ztan/Zg9Sp1idzhOKitdBlf0UKh305MeKUitPey9tLVqE2HsXH12EWCuRLgqCNTXqnIut8GUo8IEPAuzIiwpnO7awKG70jz4DcNS5rZ2OHKHN3mkMYG+QUICGv3Z1M7POXlCZWxUpMGt9GuJ2Iq89CXjdJOgLP7ZQj9kOBW0tWUNgpfePEpw1shCVnERlhVoak7X+Qz8bjgcKSqa4TYqs6tseYZ7ED+Umydv+Botlx1kMIXITt6mIDT4vhGrcg9qVpabHMWSJDqR9DzSDSoblM9wxyZ8MUE67BTVgpN6eM99s6JTauRty/LIBwlrknWnCjwrFG4Oy4jPWbUT6mFD6fZhDfqsED0CJ8uRbUISQBRoPHY9s+fhyMIrf4VjmwKJK7Kw+K5VT6Tc6NEkGBnNmigq+WG6IbFYxHNg8aj5xrN5A1ss/2EJ+69HksLNBnrsRCUHyJIIWwrV+y6SBc8oecoP8F17A8SKMe65GNLCEGApE0MBFSpf0kIN1xBh37L4vVX1toSGW7+zTtcQbDdvcME/Kjs25bMO+QOLpBPkRFPo5KSy9XG41qWW+lsBtgrmaUsQhGYM6n0IGoz+rcbvCwxyaSZ4IhJL1nVm301IsNyudjW2KVFXt8TsziPM69AAkXivzOl8SScUrJFo0vu38QCs1wV56sKhiIiKcKaM6/UjZ1leHVwcEn4CPL9OiGMalQ+rgv83Zva6eDb4r4HgQ5nQYE42Lj69VpE35Pe4daxmlXG+mewc5MJsLjDIZjLYL7PXLI2/fR8sbDVEc3pIGBZG/Mhvu0Wf9xp6RBdZmfTZu4Jz1N5JE+QjKKHGwCxjKLOufOFi3S3lncBikzjYUQ+UszJy162vOeGrkFfTbj8RF9rGFOf7dmTFS5Pe2TPuczfmM3DfZpn1XS5yNtS/dOEMFTG12lZX+Xa6pV6KMvQfYQgyCr7VUUwjqJDV30Wbpi+6C/eh/3FA2FQ1J7o/LN4IwS7XTkMen0Pvp0PjpSqn/LqVFui4nmxlC9YShjKvK4ewFFTUtWpLT9VVGefxeqfRxjY5CRx10uLbJ7YyKlRvtY6JynLNEnbJL45/CnDuNkeOKgzNjpgR8LLzd3I0O0BsnEwhMM5J3NmAOqF7zELjJxFWaHX/rHMn7xnzdRxBSxHwJF7FCJJf5BmkMldhKLAyeWCEXsh0AROzRbkTMxh3WCx89GJZoMxkR+jhpZGO7IXQkxyMljKBVGJRE/xU+joKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoHDo0H8pjpLDqYeJo9IvhSJ2aPgmZn7/lLD/l0qWVTLD34JPphX++sOxJWYuzZLpzbefn9G93tNHz1sClVfT/Hx6PhRmW2LWbGX13N6kV+pNNLdkTSaWOdFeAvhrbaJppqVpz2VNW7pvh0XMnLuT+WLhLLSF4y+cZ8fxp+tX/VXTZp0nRy97U11/rU51722ZJzHra+ibwXQwN7PAMr9/2/z6dc00t7PDtDb3rM1sQZPle45NnNLM93u+v9I09z+npPn+x/u03Fz4jlfXVi/VpeZ1dMs0c+W1eF/0zJ43XZpzs+T6H6W5ac394JfNpDE/rVJptnCn7pszc13P+XQ/FkHPPFk4MWv15D45q9liGgxJc/3em7mv1rv2n75wXhvaslF/n3it8me+49BaLT7qL8G7nTnuYuE/vXwEI2nhruee8xR8cl6clbfy186z++o0nPWqEYy5JUXMNF8Wc9f0PMf8XK38Vcl5+rDWvlt/0z3dr/pOYzGtT/X3XImZXsPsz5zVYvXiOp+ztbMKuASd8zoNPjn+0nX80iLg7M7cpxffXazXq7XfcHo4sUB8zC3PvQ1+/MlKm7lz79n8cBa9yer1P2c1eZ85nq/503y7zPSsT6837T3Pn+clz7O855I1/TSXpee5F8jwT29qLee9t8l0MjV7b5YXXO1Z398FBR1MOjO4uvkJ/uttZpPV6wX/mJtLmytWKXctFgqJ7ScTu4D/ij1WIoXH74Midmj4tcT+B52t2PYUfpcuAAAAAElFTkSuQmCC">
 </head>
+
 <body>
     <h1>Settings</h1>
-
+    <div class="functions">
+        <div class="content">
+            <label for="wifi-on">Wifi</label>
+            <input type="checkbox" name="wifi" id="wifi-on">
+        </div>
+        <div class="content">
+            <label for="wifi-on">Wifi</label>
+            <input type="checkbox" name="wifi" id="wifi-on">
+        </div>
+        <div class="content">
+            <label for="wifi-on">Wifi</label>
+            <input type="checkbox" name="wifi" id="wifi-on">
+        </div>
+        <div class="content">
+            <label for="wifi-on">Wifi</label>
+            <input type="checkbox" name="wifi" id="wifi-on">
+        </div>
+        <div class="content">
+            <label for="wifi-on">Wifi</label>
+            <input type="checkbox" name="wifi" id="wifi-on">
+        </div>
+        <div class="content">
+            <label for="wifi-on">Wifi</label>
+            <input type="checkbox" name="wifi" id="wifi-on">
+        </div>
+        <div class="content">
+            <label for="wifi-on">Wifi</label>
+            <input type="checkbox" name="wifi" id="wifi-on">
+        </div>
+        <div class="content">
+            <label for="wifi-on">Wifi</label>
+            <input type="checkbox" name="wifi" id="wifi-on">
+        </div>
+        <div class="content">
+            <label for="wifi-on">Wifi</label>
+            <input type="checkbox" name="wifi" id="wifi-on">
+        </div>
+        <div class="content">
+            <label for="wifi-on">Wifi</label>
+            <input type="checkbox" name="wifi" id="wifi-on">
+        </div>
+        
+    </div>
 </body>
+
 </html>
